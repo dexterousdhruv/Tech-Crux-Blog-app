@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  height: 100%;
+
+  h1, h2, h3 {
+    font-family: 'General Sans', 'sans-serif';
+  }
+
+  font-family: "Quicksand", 'sans-serif';
+}
+
+.ql-editor {
+  font-size: 1.05rem;
+}
+
+/* progress bar label */
+.text-cyan-300 > span {
+  color: white;
+}
+
+.post-content {
+  font-family: 'Sentient', 'serif';
+
+  p {
+    margin: .5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-block: 1.5rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-block: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-block: 1.5rem;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+  ul {
+    list-style-type: initial;
+  }
+  li {
+    margin: .8rem;
+  }
+
+  a {
+    color: rgb(12, 131, 228);
+    text-decoration: none;
+  }
+
+  code {
+    background-color: #ececec;
+    padding: .25rem;
+    border-radius: .25rem;
+    font-size: .9rem;
+  }
+  
+  pre {
+    background-color: #ececec;
+    font-size: .9rem;
+    white-space: pre-wrap;
+    padding: .5rem;
+    border-radius: .5rem;
+    margin-bottom: .5rem;
+  }
+}
+ 
+.dark .post-content code {
+  background-color: #1e293b;
+  border: 1px solid rgb(61, 69, 83);
+}
+
+.dark .post-content pre {
+  background-color: #1e293b;
+  border: 1px solid rgb(61, 69, 83);
+  color: #e8e7e7;
+  
+}
+
+
