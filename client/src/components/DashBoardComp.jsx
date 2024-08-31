@@ -84,7 +84,7 @@ const DashBoardComp = () => {
       <div className="flex flex-wrap justify-center gap-4 text-slate-500 dark:text-slate-200 ">
         <div className='flex flex-col p-3 dark:bg-slate-700 gap-4 md:w-72 w-full rounded-md shadow-md'>
           <div className="flex justify-between">
-            <div className="">
+            <div>
               <h3 className=' text-md uppercase '>Total Users</h3>
               <p className='text-2xl'>{totalUsers}</p>
             </div>
