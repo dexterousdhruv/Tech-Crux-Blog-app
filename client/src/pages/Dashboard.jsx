@@ -9,6 +9,28 @@ import DashBoardComp from '../components/DashBoardComp'
 const Dashboard = () => {
   const tab = useTab()
 
+  const displayTab = () => {
+    switch (tab) {
+      case 'profile':
+        return <DashProfile />
+      
+      case 'posts':
+        return <DashPosts />
+      
+      case 'users':
+        return <DashUsers />
+      
+      case 'comments':
+        return <DashComments />
+      
+      case 'dash':
+        return <DashBoardComp />
+    
+      default:
+        return <DashProfile />
+    }
+  }
+
   return (
     <div className='min-h-screen flex flex-col md:flex-row '>
       {/* Sidebar */}
@@ -17,11 +39,7 @@ const Dashboard = () => {
       </div>
 
       {/* TAB */}
-      {tab === 'profile' && <DashProfile />}
-      {tab === 'posts' && <DashPosts />}
-      {tab === 'users' && <DashUsers />}
-      {tab === 'comments' && <DashComments />}
-      {tab === 'dash' && <DashBoardComp />}
+      {displayTab()}
       
     </div>
   )
